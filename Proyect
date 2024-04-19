@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Love Calculator</title>
+
+    <script>
+
+        function calcularAmor() {
+
+            var nombre1 = document.getElementById("nombre1").value;
+
+            var nombre2 = document.getElementById("nombre2").value;
+
+            var amor = Math.floor(Math.random() * 101); /* Genera un numero del 0 al 100 */
+
+          
+   document.getElementById("resultado").innerHTML = "The love between " + nombre1 + " and " + nombre2 + " is: " + amor + "%";
+
+            if (amor <= 25) {
+
+                document.getElementById("compatibilidad").innerHTML = "They are not compatible";
+
+            } else if (amor <= 49) {
+
+                document.getElementById("compatibilidad").innerHTML = "It might work out";
+
+            } else if (amor <= 75) {
+
+                document.getElementById("compatibilidad").innerHTML = "They are compatible";
+
+            } else {
+
+                document.getElementById("compatibilidad").innerHTML = "Go for her, my wolf";
+
+            }
+
+        }
+
+    </script>
+
+</head>
+
+  <title>Cuadro de Color con texto</title>
+
+  <style>
+
+    .cuadro {
+
+      background-color:  #FF5252 ; /* Cambia el color de fondo del cuadro */
+   
+
+      padding: 8px; /* Cambia el espacio al rededor del texto */
+
+      border: 2px solid Black ; /* Cambia el borde del cuadro */
+
+      width: 280px; /* Ancho del cuadro */
+
+    }
+
+  </style>
+
+<body>
+
+<!-- Div funciona como cuadro -->
+
+<div class="cuadro">
+
+</html><h1>Welcome to the Love Calculator</h1>
+
+</div>
+
+</body>
+
+<body>
+     <label style="color : #FFFF99 " 
+           
+           for="nombre1">Enter the name of the first person:</label>
+
+    <input type="text" id="nombre1"><br>
+
+    <label style="color : #FFFF99 " 
+           
+           for="nombre2">Enter the name of the second person:</label>
+
+    <input type="text" id="nombre2"><br>
+
+    <button onclick="calcularAmor()">Calculate Love</button><br>
+
+    <p style= "color : #FFFF99 "
+       id="resultado"></p>
+
+    <p style= "color : #FFFF99 " 
+       id="compatibilidad"></p>
+     
+<style>
+
+    body {
+
+      background-image: 
+        /*Agrega una imagen */
+        url("https://cdn.create.vista.com/api/media/small/18390515/stock-photo-red-hearts-background");
+
+      background-size: cover; /* Sirve para que la imagen cubra todo el fondo */
+
+      background-position: center; /* Sirve para centrar la imagen */
+
+    }
+
+  </style>
+
+
+</body>
+
+</html>
